@@ -37,7 +37,6 @@ function StoreBook() {
         {Books.map((book) => (
           <li className="container" key={book.id}>
             <BookTitle title={book.title} author={book.author} />
-            <button type="submit">Remove</button>
           </li>
         ))}
       </ul>

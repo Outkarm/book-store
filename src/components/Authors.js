@@ -1,4 +1,3 @@
-/* eslint-disable react/prop-types */
 import React from 'react';
 import PropTypes from 'prop-types';
 
@@ -8,6 +7,7 @@ function BookTitle(props) {
     <div>
       <h1>{title}</h1>
       <p>{author}</p>
+      <button type="submit">Remove</button>
     </div>
   );
 }
