@@ -1,36 +1,11 @@
 import React from 'react';
+import { useSelector } from 'react-redux';
 import BookTitle from './Authors';
 import Input from './Form';
 import '../styles/App.css';
 
 function StoreBook() {
-  const Books = [
-    {
-      id: 1,
-      title: 'The Hunger Games',
-      genres: 'Action',
-      author: 'Suzanne Collins',
-      progres: 64,
-      chapter: 'Chapter 17: "A Lesson Learned"',
-    },
-    {
-      id: 2,
-      title: 'Dune',
-      genres: 'Fantasy',
-      author: 'Frank Herbert',
-      progres: 8,
-      chapter: 'Chapter 3: "A Lesson Learned"',
-    },
-    {
-      id: 3,
-      title: 'Capital in the Twenty-First Century',
-      genres: 'Economics',
-      author: 'Suzanne Collins',
-      progres: 0,
-      chapter: 'Introduction: "A Lesson Learned"',
-    },
-  ];
-
+  const Books = useSelector((state) => state.books);
   return (
     <div>
       <ul className="the-books">
