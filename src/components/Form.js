@@ -34,28 +34,30 @@ const Input = () => {
 
   return (
     <form className="input-area" onSubmit={BookSubmit}>
-      <h2>Add books</h2>
-      <div className="title">
-        <input
-          type="text"
-          id="text"
-          placeholder="Book Title"
-          // value={booksState.title}
-          onChange={addNewBook}
-        />
+      <h2 className="add-book">Add books</h2>
+      <div className="imput-cont">
+        <div className="title">
+          <input
+            type="text"
+            id="text"
+            placeholder="Book Title"
+            // value={booksState.title}
+            onChange={addNewBook}
+          />
+        </div>
+        <div className="author">
+          <input
+            type="text"
+            id="text-author"
+            placeholder="Book Author"
+            // value={booksState.author}
+            onChange={addNewBook}
+          />
+        </div>
+        <button type="submit" className="add">
+          Add Book
+        </button>
       </div>
-      <div className="author">
-        <input
-          type="text"
-          id="text-author"
-          placeholder="Book Author"
-          // value={booksState.author}
-          onChange={addNewBook}
-        />
-      </div>
-      <button type="submit" className="add">
-        Add Book
-      </button>
     </form>
   );
 };
