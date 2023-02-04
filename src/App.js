@@ -6,7 +6,7 @@ import Category from './components/Status';
 
 function App() {
   return (
-    <section>
+    <div>
       <nav className="nav-bar">
         <h1>Bookstore CMS</h1>
         <ul className="links">
@@ -29,7 +29,7 @@ function App() {
         <Route path="/" element={<StoreBook />} />
         <Route path="/Category" element={<Category />} />
       </Routes>
-    </section>
+    </div>
   );
 }
 export { App as default };

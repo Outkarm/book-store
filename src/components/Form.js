@@ -5,16 +5,16 @@ import { addBook } from '../redux/books/books';
 
 const defaultState = { id: '', title: '', author: '' };
 
-function Input() {
-  const [booksState, setBooKsState] = useState(defaultState);
+const Input = () => {
+  const [booksState, setBooksState] = useState(defaultState);
 
-  const data = useSelector((state) => state.booksState);
+  const data = useSelector((state) => state.books);
 
   const bookArr = data.books;
   let id = bookArr.length;
 
   const addNewBook = (e) => {
-    setBooKsState({
+    setBooksState({
       ...booksState,
       id: (id += 1).toString(),
       [e.target.name]: [e.target.value].toString(),
@@ -23,7 +23,7 @@ function Input() {
 
   const BookSubmit = () => {
     useDispatch(addBook(booksState));
-    setBooKsState(defaultState);
+    setBooksState(defaultState);
   };
 
   return (
@@ -52,5 +52,5 @@ function Input() {
       </button>
     </form>
   );
-}
-export { Input as default };
+};
+export default Input;

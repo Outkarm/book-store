@@ -4,12 +4,12 @@ import BookTitle from './Authors';
 import Input from './Form';
 import '../styles/App.css';
 
-function StoreBook() {
+const StoreBook = () => {
   const Books = useSelector((state) => state.books);
   return (
     <div>
       <ul className="the-books">
-        {Books.map((book) => (
+        {Books.books.map((book) => (
           <li className="container" key={book.id}>
             <BookTitle title={book.title} author={book.author} />
           </li>
@@ -18,6 +18,6 @@ function StoreBook() {
       <Input />
     </div>
   );
-}
+};
 
 export default StoreBook;
