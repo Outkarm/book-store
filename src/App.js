@@ -1,9 +1,8 @@
-/* eslint-disable */
-import { Route, Routes, Link } from "react-router-dom";
-import React from "react";
-import BookStore from "./components/BookStore";
-import Categories from "./components/Status";
-import "./styles/app.css";
+import { Route, Routes, Link } from 'react-router-dom';
+import React from 'react';
+import BookStore from './components/BookStore';
+import Categories from './components/Status';
+import './styles/app.css';
 
 function App() {
   return (
@@ -12,13 +11,13 @@ function App() {
         <h1>Bookstore CMS</h1>
         <ul className="nav-links">
           <li className="link">
-            {" "}
+            {' '}
             <Link className="Books" to="/">
               Books
             </Link>
           </li>
           <li className="linked">
-            {" "}
+            {' '}
             <Link className="category" to="/Categories">
               Category
             </Link>
