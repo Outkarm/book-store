@@ -19,7 +19,7 @@ const StoreBook = () => {
       <ul className="the-books">
         {books.map((book) => (
           <BookTitle
-            key={book.item_id}
+            key={book.id}
             title={book.title}
             author={book.author}
             category={book.category}
