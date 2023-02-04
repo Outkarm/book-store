@@ -1,6 +1,6 @@
 import { Route, Routes, Link } from 'react-router-dom';
 import React from 'react';
-import BookList from './components/BookStore';
+import BookStore from './components/BookStore';
 import Categories from './components/Status';
 import './styles/app.css';
 
@@ -26,7 +26,7 @@ function App() {
       </nav>
 
       <Routes>
-        <Route path="/" element={<BookList />} />
+        <Route path="/" element={<BookStore />} />
         <Route path="/Categories" element={<Categories />} />
       </Routes>
     </>
