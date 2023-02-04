@@ -1,9 +1,9 @@
-import { combineReducers, configureStore } from '@reduxjs/toolkit';
-import booksReducer from './books/books';
+import { configureStore, combineReducers } from '@reduxjs/toolkit';
+import apiPushBook from './fetchBooks';
 import categoriesReducer from './categories/categories';
 
 const reducer = combineReducers({
-  books: booksReducer,
+  books: apiPushBook,
   categories: categoriesReducer,
 });
 
