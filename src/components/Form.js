@@ -1,29 +1,35 @@
 import React, { useState } from 'react';
 import '../styles/App.css';
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import { v4 } from 'uuid';
 import { addBook } from '../redux/books/books';
 
-const defaultState = { id: '', title: '', author: '' };
+const defaultState = {
+  id: '',
+  title: '',
+  author: '',
+  category: '',
+};
 
 const Input = () => {
   const [booksState, setBooksState] = useState(defaultState);
 
-  const data = useSelector((state) => state.books);
-
-  const bookArr = data.books;
-  let id = bookArr.length;
-
   const addNewBook = (e) => {
     setBooksState({
       ...booksState,
-      id: (id += 1).toString(),
+      id: v4(),
       [e.target.name]: [e.target.value].toString(),
     });
   };
 
   const BookSubmit = () => {
     useDispatch(addBook(booksState));
-    setBooksState(defaultState);
+    setBooksState({
+      id: v4(),
+      title: '',
+      author: '',
+      category: '',
+    });
   };
 
   return (
@@ -34,7 +40,7 @@ const Input = () => {
           type="text"
           id="text"
           placeholder="Book Title"
-          value={booksState.title}
+          // value={booksState.title}
           onChange={addNewBook}
         />
       </div>
@@ -43,7 +49,7 @@ const Input = () => {
           type="text"
           id="text-author"
           placeholder="Book Author"
-          value={booksState.author}
+          // value={booksState.author}
           onChange={addNewBook}
         />
       </div>
