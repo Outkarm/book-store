@@ -1,8 +1,9 @@
 import { Route, Routes, Link } from 'react-router-dom';
 import React from 'react';
-import BookStore from './components/BookStore';
+
 import Categories from './components/Status';
 import './styles/app.css';
+import BookStore from './components/BookStore';
 
 function App() {
   return (
