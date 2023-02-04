@@ -15,7 +15,7 @@ function Category() {
       <button type="submit" onClick={onButtonClick}>
         Check Status
       </button>
-      <div>{categoryInfo.categories[0]}</div>
+      <h2>{categoryInfo.categories[0]}</h2>
     </div>
   );
 }
