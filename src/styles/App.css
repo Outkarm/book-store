@@ -1,9 +1,13 @@
 * {
-  margin: 10px;
+  padding: 0;
+  margin: 0;
   list-style: none;
   text-decoration: none;
-  padding: 0;
-  box-sizing: border-box;
+}
+
+body {
+  padding: 4%;
+  background-color: #f5f6fa;
 }
 
 #root {
@@ -15,18 +19,161 @@
   min-height: 100vh;
 }
 
-.input-area {
+.cp {
+  font-size: 30px;
+  padding: 50px;
+}
+
+.construction {
+  width: 10%;
+  padding: 12px;
+  border-radius: 3px;
+  background-color: #0290ff;
+  border: none;
+  letter-spacing: 0.5px;
+  color: #fff;
+  font-size: 0.813rem;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+.container {
+  margin-top: 20px;
   display: flex;
   flex-direction: column;
   gap: 20px;
+  border: 2px solid rgb(255, 255, 255);
+  padding: 3%;
 }
 
-.imput-cont {
+.display-bc {
+  background-color: #fff;
+  border-radius: 4px;
+  margin: 20px;
+  border: 1px solid #e8e8e8;
+  padding: 2rem;
+}
+
+.book-display {
   display: flex;
   justify-content: space-between;
 }
 
-button {
+.info-cont {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.book-title {
+  margin-top: 0.188rem;
+  font-size: 1.375rem;
+  letter-spacing: -0.2px;
+  font-weight: 700;
+  color: #121212;
+}
+
+.book-category {
+  font-weight: 700;
+  color: #121212;
+  font-size: 0.875rem;
+  opacity: 0.5;
+}
+
+.book-author {
+  font-size: 0.875rem;
+  font-weight: 300;
+  color: #4386bf;
+}
+
+.action {
+  display: flex;
+  align-items: center;
+  margin-top: 1.313rem;
+}
+
+.outline {
+  background-color: transparent;
+  border: none;
+  color: #4396bf;
+  font-size: 0.875rem;
+  font-weight: 300;
+  align-items: center;
+  cursor: pointer;
+}
+
+.divider {
+  width: 0.125rem;
+  height: 1.5rem;
+  background-color: #e8e8e8;
+  margin: 0 1rem;
+}
+
+.progress-container {
+  display: flex;
+  align-items: center;
+}
+
+.circular-progress-container {
+  width: 5.625rem;
+  height: 5.625rem;
+  padding: 0.63rem 0.625rem 0.75rem 0.75rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.circular {
+  position: absolute;
+  border-radius: 50%;
+  width: 4.25rem;
+  height: 4.25rem;
+  border: 5px solid #308bbe;
+  border-left-color: #e8e8e8;
+  -webkit-transform: rotate(45deg);
+  transform: rotate(30deg);
+}
+
+.start .complete {
+  color: #121212;
+  font-size: 2rem;
+}
+
+.completed {
+  font-size: 0.875rem;
+  opacity: 0.5;
+}
+
+.progress-divider {
+  width: 0.125rem;
+  height: 4.375rem;
+  margin: 0 3.688rem 0 4.938rem;
+  background-color: #e8e8e8;
+}
+
+.chapter-container {
+  display: flex;
+  flex-direction: column;
+  grid-gap: 20px;
+  gap: 20px;
+  width: 14rem;
+}
+
+.chapter-label {
+  font-weight: 300;
+  color: #121212;
+  font-size: 0.813rem;
+  opacity: 0.5;
+}
+
+.current-chapter {
+  margin-top: 0.438rem;
+  font-weight: 300;
+  font-size: 1rem;
+  letter-spacing: -0.4px;
+}
+
+.updated-button {
   cursor: pointer;
   border: none;
   background-color: #0290ff;
@@ -38,7 +185,36 @@ button {
   color: #fff;
 }
 
-input {
+.books {
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+.create {
+  height: 0.2rem;
+  background-color: #f5f6f5;
+  width: 100%;
+  margin: 2.5rem 0 1.813rem;
+}
+
+.Add-container .add-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  letter-spacing: -0.18px;
+  color: #888;
+}
+
+.add-book {
+  margin-top: 20px;
+  display: flex;
+  gap: 32px;
+}
+
+.author-input,
+.title-input {
   padding: 12px;
   border-radius: 4px;
   border: 1px solid #e8e8e8;
@@ -48,11 +224,25 @@ input {
   color: #121212;
 }
 
-.add-book {
-  font-size: 1.25rem;
+.author-input {
+  width: 25%;
+}
+
+.title-input {
+  width: 55%;
+}
+
+.add-button {
+  cursor: pointer;
+  width: 20%;
+  padding: 12px;
+  border-radius: 3px;
+  background-color: #0290ff;
+  border: none;
+  letter-spacing: 0.5px;
+  color: #fff;
+  font-size: 0.813rem;
   font-weight: 700;
-  letter-spacing: -0.18px;
-  color: #888;
 }
 
 .nav-bar {
@@ -72,9 +262,26 @@ h1 {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-.links {
+.nav-links {
   display: flex;
   flex-grow: 1;
   list-style-type: none;
   gap: 30px;
+}
+
+.link {
+  padding: 10px;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  color: #121212;
+  letter-spacing: 1.9px;
+}
+
+.linked {
+  padding: 10px;
+  opacity: 0.5;
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.9rem;
+  color: #121212;
+  letter-spacing: 1.9px;
 }

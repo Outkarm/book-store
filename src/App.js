@@ -1,22 +1,22 @@
 import { Route, Routes, Link } from 'react-router-dom';
-import './styles/App.css';
 import React from 'react';
-import StoreBook from './components/Bookstore';
-import Category from './components/Status';
+import BookList from './components/BookStore';
+import Categories from './components/Status';
+import './styles/app.css';
 
 function App() {
   return (
-    <div>
+    <>
       <nav className="nav-bar">
         <h1>Bookstore CMS</h1>
-        <ul className="links">
-          <li>
+        <ul className="nav-links">
+          <li className="link">
             {' '}
             <Link className="Books" to="/">
               Books
             </Link>
           </li>
-          <li>
+          <li className="linked">
             {' '}
             <Link className="category" to="/Categories">
               Category
@@ -26,10 +26,10 @@ function App() {
       </nav>
 
       <Routes>
-        <Route path="/" element={<StoreBook />} />
-        <Route path="/Category" element={<Category />} />
+        <Route path="/" element={<BookList />} />
+        <Route path="/Categories" element={<Categories />} />
       </Routes>
-    </div>
+    </>
   );
 }
 export { App as default };
