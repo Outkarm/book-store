@@ -1,34 +1,34 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
-import BookTitle from './Authors';
-import Input from './Form';
-import '../styles/App.css';
-import { fetchBooks } from '../redux/books/books';
+import BookCreator from './Author';
+import CreateBookObject from './BooksCreate';
+import { fetchBooks } from '../redux/fetchBooks';
 
-const StoreBook = () => {
-  const { books } = useSelector((state) => state.books);
-
+function BookStore() {
   const theDispatch = useDispatch();
+  const { books } = useSelector((state) => state.books);
 
   useEffect(() => {
     theDispatch(fetchBooks());
   }, [theDispatch]);
 
   return (
-    <div>
-      <ul className="the-books">
+    <div className="container">
+      <ul className="books">
         {books.map((book) => (
-          <BookTitle
-            key={book.id}
-            title={book.title}
-            author={book.author}
-            category={book.category}
+          <BookCreator
+            key={book.Id}
+            Id={book.Id}
+            Title={book.title}
+            Author={book.author}
+            Category={book.category}
           />
         ))}
       </ul>
-      <Input />
+      <div className="create"> </div>
+      <CreateBookObject />
     </div>
   );
-};
+}
 
-export default StoreBook;
+export default BookStore;

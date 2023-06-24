@@ -1,13 +1,12 @@
-<a name="readme-top">Math Magician App</a>
+<a name="readme-top"></a>
 
 <div align="center">
-  <!-- You are encouraged to replace this logo with your own! Otherwise you can also remove it. -->
-  <img src="murple_logo.png" alt="logo" width="140"  height="auto" />
-  <br/>
 
-  <h3><b>Microverse README Template</b></h3>
+  <h3><b>Book Store</b></h3>
 
 </div>
+
+<!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
@@ -18,59 +17,70 @@
   - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
   - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
   - [Install](#install)
   - [Usage](#usage)
-  - [Run tests](#run-tests)
   - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ (OPTIONAL)](#faq)
+- [❓ FAQ](#faq)
 - [📝 License](#license)
 
-# 📖Bookstore App <a name="about-project"></a>
+<!-- PROJECT DESCRIPTION -->
 
-**Bookstore App** is a calculator app that peforms all basic calculator functions
+# 📖 Book Store <a name="about-project"></a>
 
-## 🛠 Built With <a name="built-with">React</a>
+**Book Store**
+
+## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
 <details>
-  <summary>Client</summary>
+  <summary>Languages</summary>
   <ul>
-    <li><a href="https://reactjs.org/">React.js</a></li>
+    <li>HTML</li>
+    <li>CSS</li>
+    <li>JavaScript</li>
   </ul>
 </details>
-
+<details>
+  <summary>Frameworks</summary>
+  <ul>
+    <li>React</li>
+  </ul>
+</details>
+<details>
+  <summary>Bundler</summary>
+  <ul>
+    <li>React-scripts</li>
+  </ul>
+</details>
 <details>
   <summary>Server</summary>
   <ul>
-    <li><a href="https://expressjs.com/">Express.js</a></li>
+    <li>Render</li>
   </ul>
 </details>
 
-<details>
-<summary>Database</summary>
-  <ul>
-    <li><a href="https://www.postgresql.org/">PostgreSQL</a></li>
-  </ul>
-</details>
+<!-- Features -->
 
 ### Key Features <a name="key-features"></a>
 
-- **ADD and Subtract**
-- **Multiply**
-- **Divide**
+- **Run an initial page built with react**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+#### 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **update progress.**
+
+<!-- LIVE DEMO -->
+
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-- [Live Demo Link](https://yourdeployedapplicationlink.com)
+> Coming soon...
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -80,46 +90,50 @@
 
 To get a local copy up and running, follow these steps.
 
-### Prerequisites
-
-In order to run this project you need:
-
 ### Setup
 
 Clone this repository to your desired folder:
+
+```sh
+  git clone git@github.com:Outkarm/book-store.git
+  cd to-do-list
+```
 
 ### Install
 
 Install this project with:
 
+```sh
+  npm install
+```
+
 ### Usage
 
-To run the project, execute the following command:
+To run the project in a development server, execute the following command:
 
-### Run tests
-
-To run tests, run the following command:
+```sh
+  npm start
+```
 
 ### Deployment
 
-You can deploy this project using:
+You can deploy this project using [Github Pages](https://docs.github.com/en/pages/getting-started-with-github-pages/creating-a-github-pages-site)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 👥 Authors <a name="authors">John Kpordje</a>
+<!-- AUTHORS -->
 
-👤 **Outkarm Johnson**
+## 👥 Authors <a name="authors"></a>
 
-- GitHub: [Outkarm](https://github.com/Outkarm)
+👤 **John Kpordje**
+
+- GitHub: [@Outkarm](https://github.com/Outkarm)
+- Twitter: [@outkarm](https://twitter.com/outkarm)
 - LinkedIn: [John Kpordje](https://www.linkedin.com/in/john-kpordje-866749241/)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-## 🔭 Future Features <a name="future-features"></a>
-
-- [ ] **More functions**
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- CONTRIBUTING -->
 
 ## 🤝 Contributing <a name="contributing"></a>
 
@@ -129,36 +143,36 @@ Feel free to check the [issues page](../../issues/).
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
+<!-- SUPPORT -->
+
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project...
+If you like this project give me a star.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- ACKNOWLEDGEMENTS -->
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank...
+<p align="right">(<a href="#readme-top">back to top</a>)</p>
+
+<!-- FAQ (optional) -->
+
+## ❓ FAQ <a name="faq"></a>
+
+> Add at least 2 questions new developers would ask when they decide to use your project.
+
+- **What is this project?**
+
+  - It's a project of micoverse curriculam.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
-FAQ (opti
-
-## ❓ FAQ (OPTIONAL) <a name="faq"></a>
-
-- **[Question_1]**
-
-  - [Answer_1]
-
-- **[Question_2]**
-
-  - [Answer_2]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+<!-- LICENSE -->
 
 ## 📝 License <a name="license"></a>
 
 This project is [MIT](./LICENSE) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
