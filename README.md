@@ -80,7 +80,7 @@
 
 ## 🚀 Live Demo <a name="live-demo"></a>
 
-> Coming soon...
+Click [Here](https://book-store-f2zl.onrender.com) to view live demo
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
