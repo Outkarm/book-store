@@ -2,8 +2,8 @@
 import { Route, Routes, Link } from "react-router-dom";
 import React from "react";
 import Categories from "./components/Status";
-import "./styles/app.css";
-import BookStore from "./components/BookStore";
+import "./styles/App.css";
+import Bookstore from "./components/Bookstore";
 
 function App() {
   return (
@@ -27,7 +27,7 @@ function App() {
       </nav>
 
       <Routes>
-        <Route path="/" element={<BookStore />} />
+        <Route path="/" element={<Bookstore />} />
         <Route path="/Categories" element={<Categories />} />
       </Routes>
     </>

@@ -1,6 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux';
 import { statusCheck } from '../redux/categories/categories';
-import '../styles/app.css';
+import '../styles/App.css';
 
 const Categories = () => {
   const theDispatch = useDispatch();
